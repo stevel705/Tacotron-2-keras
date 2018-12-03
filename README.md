@@ -23,5 +23,18 @@ The model described by the authors can be divided in two parts:
 
 To have an in-depth exploration of the model architecture, training procedure and preprocessing logic, refer to our [wiki](https://github.com/Stevel705/Tacotron-2-keras/wiki)
 
-## Lisense
+## Ussage:
+0. Clone a repository
+```
+$ git clone https://github.com/Stevel705/Tacotron-2-keras.git
+```
+1. Download LJ-like dataset (e.g. [english Speech Dataset](https://keithito.com/LJ-Speech-Dataset/))
+2. Extract dataset to `Tacotron-2-keras\data` folder
+3. Run `$ python3 1_create_audio_dataset.py` to process an audio
+4. Run `$ python3 2_create_text_dataset.py` to create a text data
+5. Train tacotron `$ python3 3_train.py`
+6. Test pretrained model `$ python3 4_test.py` *(optional)*
+7. Synthesize mels and speech `$ python3 5_syntezer.py` *(in progress)*
+
+## Lisense:
 MIT Lisense
