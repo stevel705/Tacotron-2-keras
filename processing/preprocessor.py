@@ -4,7 +4,7 @@ from processing import audio
 import os
 import numpy as np 
 from processing import hparams
-from processing.util import mulaw_quantize, mulaw, is_mulaw, is_mulaw_quantize
+from utils.util import mulaw_quantize, mulaw, is_mulaw, is_mulaw_quantize
 
 
 def build_from_path(input_dirs, mel_dir, linear_dir, wav_dir, n_jobs=12, tqdm=lambda x: x):

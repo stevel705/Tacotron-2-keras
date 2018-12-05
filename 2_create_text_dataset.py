@@ -8,7 +8,7 @@ metadata = pd.read_csv('data/LJSpeech-1.1/metadata.csv',
                        dtype='object', quoting=3, sep='|',
                        header=None)
 
-metadata = metadata.iloc[:500]
+#metadata = metadata.iloc[:500]
 
 metadata['norm_lower'] = metadata[2].apply(lambda x: x.lower())
 

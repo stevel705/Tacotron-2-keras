@@ -5,6 +5,7 @@ from sklearn.externals import joblib
 from model.tacotron_model import get_tacotron_model
 
 # import prepared data
+#TODO: rewrite train. now work dir is "data/training_data"
 decoder_input_training = joblib.load('data/decoder_input_training.pkl')
 mel_spectro_training = joblib.load('data/mel_spectro_training.pkl')
 spectro_training = joblib.load('data/spectro_training.pkl')
